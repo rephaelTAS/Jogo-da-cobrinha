@@ -1,0 +1,454 @@
+/* ============================================================
+   Cobrinha — tema escuro, minimalista e com acento menta
+   ============================================================ */
+
+.root {
+    -bg: #090b0e;
+    -text: #ecf2f7;
+    -muted: #8a95a1;
+    -faint: #5b6672;
+    -accent: #63f2c0;
+    -accent-soft: rgba(99, 242, 192, 0.12);
+    -gold: #ffc15e;
+    -danger: #ff6b62;
+
+    -fx-background-color: -bg;
+    -fx-font-family: "Fira Sans";
+    -fx-font-smoothing-type: gray;
+}
+
+.app-root {
+    -fx-background-color: transparent;
+}
+
+.label {
+    -fx-text-fill: -text;
+}
+
+/* ---------- Tipografia compartilhada ---------- */
+
+.eyebrow {
+    -fx-font-size: 9px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -accent;
+}
+
+.screen-title {
+    -fx-font-size: 38px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -text;
+}
+
+.screen-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: -muted;
+}
+
+.screen-note {
+    -fx-font-size: 9.5px;
+    -fx-text-fill: -faint;
+}
+
+/* ---------- Botões ---------- */
+
+.ghost-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 999;
+    -fx-border-color: rgba(255, 255, 255, 0.10);
+    -fx-border-width: 1;
+    -fx-border-radius: 999;
+    -fx-padding: 8 18;
+    -fx-font-size: 10.5px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #aab5bf;
+    -fx-cursor: hand;
+}
+
+.ghost-button:hover {
+    -fx-background-color: rgba(99, 242, 192, 0.06);
+    -fx-border-color: rgba(99, 242, 192, 0.45);
+    -fx-text-fill: -accent;
+}
+
+.ghost-button:pressed {
+    -fx-translate-y: 1;
+}
+
+.ghost-button:focused {
+    -fx-border-color: rgba(99, 242, 192, 0.75);
+}
+
+.primary-button {
+    -fx-background-color: -accent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 999;
+    -fx-text-fill: #06140f;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 11 26;
+    -fx-min-width: 220;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(99, 242, 192, 0.18), 18, 0.2, 0, 6);
+}
+
+.primary-button:hover {
+    -fx-background-color: #8fffd9;
+    -fx-effect: dropshadow(gaussian, rgba(99, 242, 192, 0.32), 24, 0.25, 0, 7);
+}
+
+.primary-button:pressed {
+    -fx-background-color: #4bd8aa;
+    -fx-translate-y: 1;
+}
+
+.secondary-button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 999;
+    -fx-border-color: rgba(255, 255, 255, 0.14);
+    -fx-border-width: 1;
+    -fx-border-radius: 999;
+    -fx-text-fill: #b9c5ce;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 26;
+    -fx-min-width: 220;
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-border-color: rgba(99, 242, 192, 0.5);
+    -fx-text-fill: -accent;
+    -fx-background-color: rgba(99, 242, 192, 0.05);
+}
+
+.secondary-button:pressed {
+    -fx-translate-y: 1;
+}
+
+.danger-button {
+    -fx-background-color: rgba(255, 107, 98, 0.10);
+    -fx-background-insets: 0;
+    -fx-background-radius: 999;
+    -fx-border-color: rgba(255, 107, 98, 0.30);
+    -fx-border-width: 1;
+    -fx-border-radius: 999;
+    -fx-padding: 8 18;
+    -fx-font-size: 10.5px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -danger;
+    -fx-cursor: hand;
+}
+
+.danger-button:hover {
+    -fx-background-color: rgba(255, 107, 98, 0.18);
+    -fx-border-color: rgba(255, 107, 98, 0.55);
+}
+
+.danger-button:pressed {
+    -fx-translate-y: 1;
+}
+
+/* ---------- Tela inicial ---------- */
+
+.home-root {
+    -fx-background-color: transparent;
+}
+
+.hero-title {
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -text;
+}
+
+.hero-subtitle {
+    -fx-font-size: 12.5px;
+    -fx-text-fill: -muted;
+}
+
+.mode-row {
+    -fx-background-color: #11171d;
+    -fx-background-radius: 18;
+    -fx-border-color: rgba(255, 255, 255, 0.07);
+    -fx-border-width: 1;
+    -fx-border-radius: 18;
+    -fx-padding: 13 18;
+}
+
+.mode-row:hover {
+    -fx-background-color: #151d24;
+    -fx-border-color: rgba(99, 242, 192, 0.30);
+}
+
+.mode-row:focused {
+    -fx-background-color: #141c22;
+    -fx-border-color: rgba(99, 242, 192, 0.68);
+    -fx-effect: dropshadow(gaussian, rgba(99, 242, 192, 0.10), 20, 0.15, 0, 4);
+}
+
+.mode-name {
+    -fx-font-size: 17px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -text;
+}
+
+.mode-desc {
+    -fx-font-size: 10.5px;
+    -fx-text-fill: -muted;
+}
+
+.mode-record-label {
+    -fx-font-size: 8px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -faint;
+}
+
+.mode-record-value {
+    -fx-font-size: 17px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -text;
+}
+
+.bonus-hint {
+    -fx-font-size: 9.5px;
+    -fx-text-fill: -faint;
+}
+
+.bonus-dot {
+    -fx-background-color: -gold;
+    -fx-background-radius: 999;
+    -fx-min-width: 7;
+    -fx-min-height: 7;
+    -fx-max-width: 7;
+    -fx-max-height: 7;
+    -fx-effect: dropshadow(gaussian, rgba(255, 193, 94, 0.45), 8, 0.2, 0, 0);
+}
+
+.footer-divider {
+    -fx-background-color: rgba(255, 255, 255, 0.055);
+}
+
+/* ---------- Recordes ---------- */
+
+.records-root {
+    -fx-background-color: transparent;
+}
+
+.record-row {
+    -fx-background-color: #11171d;
+    -fx-background-radius: 16;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-width: 1;
+    -fx-border-radius: 16;
+    -fx-padding: 14 18;
+}
+
+.record-mode-name {
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -text;
+}
+
+.record-mode-desc {
+    -fx-font-size: 10px;
+    -fx-text-fill: -muted;
+}
+
+.record-caption {
+    -fx-font-size: 8px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -faint;
+}
+
+.record-value {
+    -fx-font-size: 30px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -text;
+}
+
+/* ---------- Configurações ---------- */
+
+.settings-root {
+    -fx-background-color: transparent;
+}
+
+.settings-row {
+    -fx-background-color: #11171d;
+    -fx-background-radius: 16;
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+    -fx-border-width: 1;
+    -fx-border-radius: 16;
+    -fx-padding: 16 20;
+}
+
+.settings-name {
+    -fx-font-size: 15px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -text;
+}
+
+.settings-desc {
+    -fx-font-size: 10.5px;
+    -fx-text-fill: -muted;
+}
+
+.settings-feedback {
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -accent;
+}
+
+.toggle-switch {
+    -fx-background-color: #29343c;
+    -fx-background-radius: 999;
+    -fx-border-color: rgba(255, 255, 255, 0.08);
+    -fx-border-width: 1;
+    -fx-border-radius: 999;
+}
+
+.toggle-switch:selected {
+    -fx-background-color: -accent;
+    -fx-border-color: transparent;
+}
+
+.toggle-switch:focused {
+    -fx-border-color: rgba(99, 242, 192, 0.75);
+}
+
+.toggle-knob {
+    -fx-background-color: #e9eef3;
+    -fx-background-radius: 999;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.35), 6, 0.1, 0, 2);
+}
+
+.toggle-switch:selected .toggle-knob {
+    -fx-background-color: #06140f;
+}
+
+.modal-layer {
+    -fx-background-color: transparent;
+}
+
+.modal-backdrop {
+    -fx-background-color: rgba(3, 6, 8, 0.72);
+}
+
+.modal-card {
+    -fx-background-color: rgba(15, 19, 24, 0.98);
+}
+
+.modal-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -text;
+}
+
+/* ---------- Jogo ---------- */
+
+.game-screen {
+    -fx-background-color: transparent;
+}
+
+.game-score-label {
+    -fx-font-size: 9px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -muted;
+}
+
+.game-score {
+    -fx-font-size: 68px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -text;
+}
+
+.board {
+    -fx-background-color: linear-gradient(to bottom, #161d24, #0c1014 72%);
+    -fx-background-radius: 24;
+    -fx-border-color: rgba(255, 255, 255, 0.075);
+    -fx-border-width: 1;
+    -fx-border-radius: 24;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.58), 48, 0.16, 0, 18);
+}
+
+/* ---------- Sobreposições do jogo ---------- */
+
+.overlay-backdrop {
+    -fx-background-color: rgba(5, 8, 10, 0.62);
+    -fx-background-radius: 24;
+}
+
+.overlay-card {
+    -fx-background-color: rgba(15, 19, 24, 0.95);
+    -fx-background-radius: 22;
+    -fx-border-color: rgba(255, 255, 255, 0.09);
+    -fx-border-width: 1;
+    -fx-border-radius: 22;
+    -fx-padding: 30 36 26 36;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.55), 36, 0.2, 0, 14);
+}
+
+.overlay-eyebrow {
+    -fx-font-size: 9.5px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -accent;
+}
+
+.overlay-eyebrow.danger {
+    -fx-text-fill: -danger;
+}
+
+.overlay-title {
+    -fx-font-size: 27px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -text;
+}
+
+.overlay-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: -muted;
+}
+
+.overlay-score {
+    -fx-font-size: 62px;
+    -fx-font-weight: 600;
+    -fx-text-fill: -text;
+    -fx-padding: 0 0 2 0;
+}
+
+.overlay-score-label {
+    -fx-font-size: 9px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -muted;
+}
+
+.overlay-record {
+    -fx-font-size: 9.5px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #77828e;
+}
+
+.record-chip {
+    -fx-background-color: -accent-soft;
+    -fx-background-radius: 999;
+    -fx-padding: 4 9;
+    -fx-font-size: 8px;
+    -fx-font-weight: bold;
+    -fx-text-fill: -accent;
+}
+
+.overlay-hint {
+    -fx-font-size: 9.5px;
+    -fx-text-fill: #66717d;
+}
+
+/* ---------- Tooltip ---------- */
+
+.tooltip {
+    -fx-background-color: #1a2128;
+    -fx-background-radius: 6;
+    -fx-text-fill: -text;
+    -fx-font-size: 10px;
+    -fx-padding: 5 9;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.45), 12, 0.15, 0, 4);
+}

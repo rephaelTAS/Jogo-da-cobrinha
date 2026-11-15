@@ -1,0 +1,11 @@
+# Maven
+target/
+.mvn/wrapper/
+
+# Ambiente local de verificação (não versionado)
+.tools/
+.build/
+.idea/
+*.iml
+.vscode/
+.DS_Store
